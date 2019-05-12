@@ -9,7 +9,7 @@ RUN apk upgrade --no-cache
 RUN echo 'Finished installing dependencies'
 
 # Install npm production packages
-COPY package.json /app/
+COPY ./package.json /app/
 RUN cd /app; npm install --production
 
 COPY . /app
