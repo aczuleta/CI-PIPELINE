@@ -1,14 +1,9 @@
 pipeline {
-    agent {
-        node{
-            label 'docker'
-        }
-    }
-
+    agent any
     stages {
         stage('Build'){
             steps {
-                sh ' echo "hellow world!" '
+                sh 'echo "hellow world!"'
             }
         }
     }
