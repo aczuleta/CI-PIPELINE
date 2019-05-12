@@ -1,4 +1,4 @@
-FROM node:8-stretch
+FROM node:8.11.4-alpine
 
 # Change working directory
 WORKDIR "/app"
