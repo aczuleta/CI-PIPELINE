@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh 'echo "hellow 2nd world!"'
+                sh 'echo "hellow 3rd  world!"'
             }
         }
     }
