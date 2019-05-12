@@ -5,7 +5,7 @@ WORKDIR "/app"
 
 # Update packages and install dependency packages for services
 RUN apk  update \
- && apk upgrade -y \
+ && apk upgrade  \
  && apk cache clean \
  && echo 'Finished installing dependencies'
 
