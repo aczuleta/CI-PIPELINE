@@ -4,10 +4,9 @@ FROM node:8.11.4-alpine
 WORKDIR "/app"
 
 # Update packages and install dependency packages for services
-RUN apk  update \
- && apk upgrade  \
- && apk cache clean \
- && echo 'Finished installing dependencies'
+RUN apk update 
+RUN apk upgrade --no-cache
+RUN echo 'Finished installing dependencies'
 
 # Install npm production packages
 COPY package.json /app/
