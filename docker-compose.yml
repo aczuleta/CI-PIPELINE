@@ -2,7 +2,7 @@ version: '3'
 services:
   jenkins:
     container_name: jenkins-docker
-    image: aczulet10/jenkins-docker
+    image: aczuleta10/jenkins-docker
     build:
       context: .    
     ports:
